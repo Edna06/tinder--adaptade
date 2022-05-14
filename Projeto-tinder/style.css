@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(90deg, rgb(177, 117, 149) 16%, rgb(231, 190, 216) 57%, rgb(229, 229, 230) 100%);
+    height: 100vh;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 10px 0;
+    height: 55px;
+}
+
+.navbar i{
+    font-size: 1.5rem;
+    color: #72757b;
+}
+
+.navbar i:nth-child(1){
+    color: #e91b47;
+}
+
+/* Photo and actions */
+.photo-and-actions{
+    height: calc(100vh - 44px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo{
+    width: 98vw;
+    height: 125vw;
+    background-image: url('./img/girl.jpeg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px 0 rgba(46, 11, 11, 0.77);
+    display: flex;
+    align-items: flex-end;
+    color: #eee;
+}
+
+.photo-text{
+    padding-inline-end: 59%;
+    padding-inline-start: 5%;
+    background: linear-gradient(180deg, rgb(142, 87, 155) 0%, rgba(51, 49, 118, 0) 0%, rgba(97, 66, 66, 0.7) 52%);
+    border-radius: 16px;
+}
+
+.status i {
+    color: green;
+}
+
+.status h4{
+    display: inline;
+}
+
+
+
+.photo-name-and-age{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+}
+
+.photo-name-and-age h2:nth-child(2){
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.photo-bio{
+    line-height: 1.6rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Actions */
+.actions{
+    display: flex;
+    flex: auto;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.action{
+    background: #fff;
+    box-shadow: 0 2px 6px 0 rgba(112, 125, 134, 0.14);
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 2rem;
+}
+
+.actions .action:nth-child(1){
+    color: hsl(45, 84%, 64%);
+    height: 49px;
+    width: 48px;
+    font-size: 1.5rem;
+}
+.actions .action:nth-child(2){
+    margin: 0 0.5rem;
+    color: hsl(352, 98%, 65%);
+}
+
+.actions .action:nth-child(3){
+    color: hsl(202, 100%, 59%);
+    height: 49px;
+    width: 48px;
+    font-size: 1.5rem;
+}
+
+.actions .action:nth-child(4){
+    margin: 0 0.5rem;
+    color: hsl(160, 80%, 41%);
+}
+
+.actions .action:nth-child(5){
+    color: hsl(272, 83%, 43%);
+    height: 49px;
+    width: 48px;
+    font-size: 1.5rem;
+}
+
+
+
+
+/* Desktop View */
+
+@media (min-width: 1024px){
+    .photo{
+        width: 367px;
+        height: 684px;
+    }
+    .photo-text{
+        padding-inline-end: 55%;}
+   
+    .navbar{
+        width: 400px;
+        margin: auto;
+    }
+}
